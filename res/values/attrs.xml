@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="ptrAdapterViewBackground" format="reference|color" />
+    <attr name="ptrHeaderBackground" format="reference|color" />
+    <attr name="ptrHeaderTextColor" format="reference|color" />
+    <attr name="ptrHeaderSubTextColor" format="reference|color" />
+    <attr name="ptrMode">
+        <flag name="pullDownFromTop" value="0x00000001" />
+        <flag name="pullUpFromBottom" value="0x00000002" />
+        <flag name="both" value="0x00000003" />
+    </attr>
+    <attr name="ptrShowIndicator" format="reference|boolean" />
+    <attr name="ptrDrawable" format="reference" />
+    <attr name="default_screen" format="integer" />
+    <attr name="actionBtnImg" format="integer" />
+    <attr name="title" format="string" />
+    <attr name="childCount" format="integer" />
+    <attr name="childLabelArray" format="integer" />
+    <attr name="textSize" format="integer" />
+    <attr name="leftBg" format="integer" />
+    <attr name="leftBgSel" format="integer" />
+    <attr name="rightBg" format="integer" />
+    <attr name="rightBgSel" format="integer" />
+    <attr name="leftText" format="integer" />
+    <attr name="rightText" format="integer" />
+    <attr name="txtSize" format="integer" />
+    <attr name="txtColor" format="string" />
+    <attr name="txtColorSel" format="string" />
+    <attr name="initSel" format="integer" />
+    <attr name="year" format="integer" />
+    <attr name="month" format="integer" />
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/event_edit_repeat_relative_layout" android:paddingLeft="13.0dip" android:paddingRight="13.0dip" android:layout_width="fill_parent" android:layout_height="46.0dip" style="@style/baseFormItem">
+            <TextView android:layout_gravity="center" android:id="@id/event_edit_repeat_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_centerVertical="true" style="@style/baseFormItemLabel" />
+            <com.tencent.qqcalendar.view.CheckBoxBtn android:id="@id/event_edit_repeat_cb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:id="@id/event_edit_beforeremind_devider" android:background="@drawable/divider_horizontal_dark" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    </LinearLayout>
+</merge>

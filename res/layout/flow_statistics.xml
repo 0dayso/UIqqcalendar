@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.qqcalendar.view.TopBarWidget TopBarWidget:title="@string/flow_statistics" style="@style/style_topbar_widget"
+      xmlns:TopBarWidget="http://schemas.android.com/apk/res/com.tencent.qqcalendar" />
+    <LinearLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:paddingTop="24.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/baseForm">
+        <TextView android:id="@id/flow_starttime" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="从什么开始开始算，到现在在位置的流量" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="18.0dip">
+            <LinearLayout android:id="@id/setting_problem_feedback" android:background="@drawable/form_item" android:paddingLeft="13.0dip" android:paddingRight="13.0dip" android:focusable="true" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="46.0dip">
+                <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="上行流量" android:layout_weight="1.0" style="@style/baseFormItemLabel" />
+                <TextView android:gravity="right" android:layout_gravity="center" android:id="@id/flow_upload" android:paddingLeft="9.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@null" android:layout_weight="1.0" style="@style/baseFormItemContent" />
+            </LinearLayout>
+            <View android:background="@drawable/normal_div" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <LinearLayout android:id="@id/setting_problem_feedback" android:background="@drawable/form_item" android:paddingLeft="13.0dip" android:paddingRight="13.0dip" android:focusable="true" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="46.0dip">
+                <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="下行流量" android:layout_weight="1.0" style="@style/baseFormItemLabel" />
+                <TextView android:gravity="right" android:layout_gravity="center" android:id="@id/flow_download" android:paddingLeft="9.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@null" android:layout_weight="1.0" style="@style/baseFormItemContent" />
+            </LinearLayout>
+        </LinearLayout>
+        <Button android:id="@id/clearflow_btn" android:background="@drawable/red_btn" android:paddingLeft="13.0dip" android:paddingRight="13.0dip" android:layout_width="fill_parent" android:layout_height="46.0dip" android:layout_marginTop="18.0dip" android:text="@string/clearFlowData" style="@style/delete_btn_text" />
+    </LinearLayout>
+</LinearLayout>

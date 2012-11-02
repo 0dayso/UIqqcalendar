@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffe2e2e2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.qqcalendar.view.TopBarWidget TopBarWidget:title="@string/setting_base" style="@style/style_topbar_widget"
+      xmlns:TopBarWidget="http://schemas.android.com/apk/res/com.tencent.qqcalendar" />
+    <LinearLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/baseForm">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17.0dip" android:text="@string/base_setting_location" style="@style/fontGameSetTitle" />
+        <LinearLayout android:id="@id/basesetting_id_set_city" android:background="@drawable/form_item_circle" android:paddingLeft="13.0dip" android:paddingRight="13.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="6.0dip">
+            <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/base_setting_city" style="@style/baseFormItemLabel" />
+            <TextView android:gravity="right" android:layout_gravity="center" android:id="@id/base_setting_city_text" android:paddingLeft="22.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@null" android:layout_weight="1.0" style="@style/baseFormItemContent" />
+            <ImageView android:layout_gravity="center" android:layout_width="20.0dip" android:layout_height="13.0dip" android:src="@drawable/more_right" />
+        </LinearLayout>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17.0dip" android:text="@string/base_setting_wallpaper_label" style="@style/fontGameSetTitle" />
+        <LinearLayout android:id="@id/base_setting_set_wallpaper" android:background="@drawable/form_item_circle" android:paddingLeft="13.0dip" android:paddingRight="13.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="6.0dip">
+            <TextView android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/base_setting_wallpaper" android:layout_weight="1.0" style="@style/baseFormItemLabel" />
+            <ImageView android:layout_gravity="center" android:layout_width="20.0dip" android:layout_height="13.0dip" android:src="@drawable/more_right" />
+        </LinearLayout>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17.0dip" android:text="@string/setting_improve_title" style="@style/fontGameSetTitle" />
+        <LinearLayout android:gravity="center_vertical" android:id="@id/llayJoinImproveClientPlan" android:background="@drawable/form_last_item" android:paddingLeft="13.0dip" android:paddingRight="13.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="6.0dip">
+            <TextView android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/setting_improve" android:layout_weight="1.0" style="@style/baseFormItemLabel" />
+            <ToggleButton android:id="@id/tbJoinImproveClientPlan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

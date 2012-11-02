@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.tencent.qqcalendar">
+    <com.tencent.qqcalendar.view.TopBarWidget android:id="@id/left_title_bar" TopBarWidget:title="@string/friends_info" style="@style/style_topbar_widget"
+      xmlns:TopBarWidget="http://schemas.android.com/apk/res/com.tencent.qqcalendar" />
+    <FrameLayout android:id="@id/web_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/left_title_bar" />
+    <ViewStub android:id="@id/vsLeftTips" android:layout="@layout/left_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.qqcalendar.view.TopBarWidget TopBarWidget:title="@string/setting_title" style="@style/style_topbar_widget"
+      xmlns:TopBarWidget="http://schemas.android.com/apk/res/com.tencent.qqcalendar" />
+    <ScrollView android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/baseForm">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:paddingTop="24.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/baseForm">
+            <LinearLayout android:id="@id/setting_account_manager" android:background="@drawable/form_item_circle" android:paddingLeft="13.0dip" android:paddingRight="13.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="48.0dip">
+                <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_account_manager" style="@style/baseFormItemLabel" />
+                <TextView android:gravity="right" android:layout_gravity="center" android:id="@id/setting_account_uin" android:paddingLeft="9.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/setting_account_not_logined" android:layout_weight="1.0" style="@style/baseFormItemContent" />
+                <ImageView android:layout_gravity="center" android:layout_width="20.0dip" android:layout_height="13.0dip" android:src="@drawable/more_right" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="18.0dip">
+                <LinearLayout android:id="@id/setting_base" android:background="@drawable/form_first_item" android:paddingLeft="13.0dip" android:paddingRight="13.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="46.0dip">
+                    <TextView android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/setting_base" android:layout_weight="1.0" style="@style/baseFormItemLabel" />
+                    <ImageView android:layout_gravity="center" android:layout_width="20.0dip" android:layout_height="13.0dip" android:src="@drawable/more_right" />
+                </LinearLayout>
+                <View android:background="@drawable/normal_div" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:id="@id/setting_game" android:background="@drawable/form_item" android:paddingLeft="13.0dip" android:paddingRight="13.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="46.0dip">
+                    <TextView android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/setting_game" android:layout_weight="1.0" style="@style/baseFormItemLabel" />
+                    <ImageView android:layout_gravity="center" android:layout_width="20.0dip" android:layout_height="13.0dip" android:src="@drawable/more_right" />
+                </LinearLayout>
+                <View android:background="@drawable/normal_div" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:id="@id/setting_problem_feedback" android:background="@drawable/form_item" android:paddingLeft="13.0dip" android:paddingRight="13.0dip" android:focusable="true" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="46.0dip">
+                    <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/problem_feedback" android:layout_weight="1.0" style="@style/baseFormItemLabel" />
+                    <ImageView android:layout_gravity="center" android:layout_width="20.0dip" android:layout_height="13.0dip" android:src="@drawable/more_right" />
+                </LinearLayout>
+                <View android:background="@drawable/normal_div" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:id="@id/setting_product_description" android:background="@drawable/form_item" android:paddingLeft="13.0dip" android:paddingRight="13.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="46.0dip">
+                    <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/product_description" android:layout_weight="1.0" style="@style/baseFormItemLabel" />
+                    <ImageView android:layout_gravity="center" android:layout_width="20.0dip" android:layout_height="13.0dip" android:src="@drawable/more_right" />
+                </LinearLayout>
+                <View android:background="@drawable/normal_div" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:id="@id/flow_statistics" android:background="@drawable/form_item" android:paddingLeft="13.0dip" android:paddingRight="13.0dip" android:focusable="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="46.0dip">
+                    <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/flow_statistics" android:layout_weight="1.0" style="@style/baseFormItemLabel" />
+                    <ImageView android:layout_gravity="center" android:layout_width="20.0dip" android:layout_height="13.0dip" android:src="@drawable/more_right" />
+                </LinearLayout>
+                <View android:background="@drawable/normal_div" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:id="@id/setting_about" android:background="@drawable/form_item" android:paddingLeft="13.0dip" android:paddingRight="13.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="46.0dip">
+                    <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_about" android:layout_weight="1.0" style="@style/baseFormItemLabel" />
+                    <ImageView android:layout_gravity="center" android:layout_width="20.0dip" android:layout_height="13.0dip" android:src="@drawable/more_right" />
+                </LinearLayout>
+                <View android:background="@drawable/normal_div" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:id="@id/update_version" android:background="@drawable/form_item" android:paddingLeft="13.0dip" android:paddingRight="13.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="46.0dip">
+                    <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/update_version" android:layout_weight="1.0" style="@style/baseFormItemLabel" />
+                    <ImageView android:layout_gravity="center" android:id="@id/has_new_version_tip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/check_update_new" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

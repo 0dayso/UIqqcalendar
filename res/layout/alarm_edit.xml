@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <com.tencent.qqcalendar.view.TopBarWidget
+        xmlns:TopBarWidget="http://schemas.android.com/apk/res/com.tencent.qqcalendar"
+        style="@style/style_topbar_widget"
+        TopBarWidget:actionBtnImg="@drawable/btn_confirm"
+        TopBarWidget:title="@string/alarm_edit_title" />
+
+    <ScrollView
+        style="@style/baseForm"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:paddingTop="13.0dip" >
+
+            <RelativeLayout
+                android:id="@id/alarm_edit_open_close"
+                android:layout_width="fill_parent"
+                android:layout_height="46.0dip"
+                android:background="@drawable/form_item_circle"
+                android:focusable="true"
+                android:paddingLeft="13.0dip"
+                android:paddingRight="13.0dip" >
+
+                <TextView
+                    style="@style/baseFormItemLabel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:text="@string/alarm_edit_open" />
+
+                <ToggleButton
+                    android:id="@id/tbOpenCloseAlarm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18.0dip"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@id/alarm_edit_time"
+                    android:layout_width="fill_parent"
+                    android:layout_height="46.0dip"
+                    android:background="@drawable/form_first_item"
+                    android:focusable="true"
+                    android:paddingLeft="13.0dip"
+                    android:paddingRight="13.0dip" >
+
+                    <TextView
+                        style="@style/baseFormItemLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/alarm_edit_time" />
+
+                    <TextView
+                        android:id="@id/alarm_edit_time_text"
+                        style="@style/baseFormItemContent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.0"
+                        android:gravity="right"
+                        android:paddingLeft="22.0dip"
+                        android:text="18:00" />
+
+                    <ImageView
+                        android:layout_width="20.0dip"
+                        android:layout_height="13.0dip"
+                        android:layout_gravity="center"
+                        android:src="@drawable/more_right" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="@drawable/normal_div" />
+
+                <LinearLayout
+                    android:id="@id/alarm_edit_repeat"
+                    android:layout_width="fill_parent"
+                    android:layout_height="46.0dip"
+                    android:background="@drawable/form_item"
+                    android:focusable="true"
+                    android:paddingLeft="13.0dip"
+                    android:paddingRight="13.0dip" >
+
+                    <TextView
+                        style="@style/baseFormItemLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/alarm_edit_repeat" />
+
+                    <TextView
+                        android:id="@id/alarm_edit_repeat_text"
+                        style="@style/baseFormItemContent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.0"
+                        android:ellipsize="end"
+                        android:gravity="right"
+                        android:paddingLeft="22.0dip"
+                        android:singleLine="true"
+                        android:text="@string/alarm_edit_repeat_none" />
+
+                    <ImageView
+                        android:layout_width="20.0dip"
+                        android:layout_height="13.0dip"
+                        android:layout_gravity="center"
+                        android:src="@drawable/more_right" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="@drawable/normal_div" />
+
+                <LinearLayout
+                    android:id="@id/alarm_edit_sound"
+                    android:layout_width="fill_parent"
+                    android:layout_height="46.0dip"
+                    android:background="@drawable/form_item"
+                    android:focusable="true"
+                    android:paddingLeft="13.0dip"
+                    android:paddingRight="13.0dip" >
+
+                    <TextView
+                        style="@style/baseFormItemLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/alarm_edit_sound" />
+
+                    <TextView
+                        android:id="@id/alarm_edit_sound_text"
+                        style="@style/baseFormItemContent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.0"
+                        android:ellipsize="end"
+                        android:gravity="right"
+                        android:paddingLeft="22.0dip"
+                        android:singleLine="true"
+                        android:text="@string/alarm_sound_silence" />
+
+                    <ImageView
+                        android:layout_width="20.0dip"
+                        android:layout_height="13.0dip"
+                        android:layout_gravity="center"
+                        android:src="@drawable/more_right" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="@drawable/normal_div" />
+
+                <LinearLayout
+                    android:id="@id/alarm_edit_sleep"
+                    android:layout_width="fill_parent"
+                    android:layout_height="46.0dip"
+                    android:background="@drawable/form_item"
+                    android:focusable="true"
+                    android:paddingLeft="13.0dip"
+                    android:paddingRight="13.0dip" >
+
+                    <TextView
+                        style="@style/baseFormItemLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/alarm_edit_sleep" />
+
+                    <TextView
+                        android:id="@id/alarm_edit_sleep_text"
+                        style="@style/baseFormItemContent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.0"
+                        android:gravity="right"
+                        android:paddingLeft="22.0dip"
+                        android:text="@string/alarm_sleep_none" />
+
+                    <ImageView
+                        android:layout_width="20.0dip"
+                        android:layout_height="13.0dip"
+                        android:layout_gravity="center"
+                        android:src="@drawable/more_right" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="@drawable/normal_div" />
+
+                <LinearLayout
+                    android:id="@id/alarm_edit_title_tag"
+                    android:layout_width="fill_parent"
+                    android:layout_height="46.0dip"
+                    android:background="@drawable/form_last_item"
+                    android:descendantFocusability="afterDescendants"
+                    android:focusable="true"
+                    android:paddingLeft="13.0dip"
+                    android:paddingRight="13.0dip" >
+
+                    <TextView
+                        style="@style/baseFormItemLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/alarm_edit_title_tag" />
+
+                    <EditText
+                        android:id="@id/alarm_edit_title_tag_text"
+                        style="@style/baseFormItemLabel"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="22.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@null"
+                        android:gravity="left"
+                        android:hint="@string/optional_input"
+                        android:paddingRight="22.0dip"
+                        android:singleLine="true" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@id/alarm_edit_delete"
+                style="@style/delete_btn_text"
+                android:layout_width="fill_parent"
+                android:layout_height="46.0dip"
+                android:layout_marginTop="18.0dip"
+                android:background="@drawable/red_btn"
+                android:text="@string/delete_alarm" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

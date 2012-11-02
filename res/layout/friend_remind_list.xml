@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/baseForm"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.qqcalendar.view.TopBarWidget android:id="@id/top_bar_widget_id" TopBarWidget:title="@string/friend_remind_list_title" style="@style/style_topbar_widget"
+      xmlns:TopBarWidget="http://schemas.android.com/apk/res/com.tencent.qqcalendar" />
+    <RelativeLayout android:id="@id/rlayFriendRemindList" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/top_bar_widget_id">
+        <ListView android:id="@id/lvFriendRemindList" android:background="@color/form_item_normal" android:focusable="true" android:scrollbars="none" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:listSelector="@android:color/transparent" android:scrollingCache="false" android:fadeScrollbars="true" />
+    </RelativeLayout>
+</RelativeLayout>

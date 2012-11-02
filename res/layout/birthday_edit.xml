@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.qqcalendar.view.TopBarWidget android:id="@id/top_bar_widget" TopBarWidget:actionBtnImg="@drawable/btn_confirm" style="@style/style_topbar_widget"
+      xmlns:TopBarWidget="http://schemas.android.com/apk/res/com.tencent.qqcalendar">
+        <com.tencent.qqcalendar.view.ButtonSwitch android:id="@id/tab_switch_btn" android:paddingLeft="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" ButtonSwitch:leftBg="@drawable/left_tab_bg" ButtonSwitch:leftBgSel="@drawable/left_tab_bg_sel" ButtonSwitch:rightBg="@drawable/right_tab_bg" ButtonSwitch:rightBgSel="@drawable/right_tab_bg_sel" ButtonSwitch:leftText="@string/label_add_one_birth" ButtonSwitch:rightText="@string/label_batch_import" ButtonSwitch:txtColor="\#FFFFFF" ButtonSwitch:txtColorSel="\#FFFFFF" ButtonSwitch:initSel="1"
+          xmlns:ButtonSwitch="http://schemas.android.com/apk/res/com.tencent.qqcalendar" />
+    </com.tencent.qqcalendar.view.TopBarWidget>
+    <RelativeLayout android:id="@id/birthday_import_tab" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/baseForm">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/btn_import_from_qq" android:paddingLeft="13.0dip" android:paddingRight="13.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="46.0dip" style="@style/baseFormItemFirst">
+                <TextView android:textSize="17.0dip" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_import_from_qq" android:drawableLeft="@drawable/icon_import_from_qq" android:drawablePadding="15.0dip" android:layout_centerVertical="true" style="@style/baseFormItemLabel" />
+                <ImageView android:layout_gravity="center" android:layout_width="20.0dip" android:layout_height="13.0dip" android:src="@drawable/more_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/desc_set_begin_time" />
+            </RelativeLayout>
+            <View android:id="@id/base_form_item_devider" android:background="@drawable/divider_horizontal_dark" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <RelativeLayout android:id="@id/btn_import_from_pengyou" android:paddingLeft="13.0dip" android:paddingRight="13.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="46.0dip" style="@style/baseFormItemLast">
+                <TextView android:textSize="17.0dip" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_import_from_pengyou" android:drawableLeft="@drawable/icon_import_from_pengyou" android:drawablePadding="15.0dip" android:layout_centerVertical="true" style="@style/baseFormItemLabel" />
+                <ImageView android:layout_gravity="center" android:layout_width="20.0dip" android:layout_height="13.0dip" android:src="@drawable/more_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/desc_set_begin_time" />
+            </RelativeLayout>
+        </LinearLayout>
+        <ProgressBar android:id="@id/progress_small" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:attr/progressBarStyleSmall" />
+    </RelativeLayout>
+    <ScrollView android:id="@id/birthday_create_tab" android:visibility="gone" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/baseForm">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:paddingTop="24.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:id="@id/edit_birthday_name" android:background="@drawable/form_first_item" android:paddingLeft="13.0dip" android:paddingRight="13.0dip" android:focusable="true" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="46.0dip">
+                    <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_birthday_name" style="@style/baseFormItemLabel" />
+                    <EditText android:gravity="left" android:layout_gravity="center" android:id="@id/et_edit_birthday_name" android:background="@null" android:paddingRight="22.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:hint="@string/hint_require_field" android:singleLine="true" style="@style/baseFormItemLabel" />
+                </LinearLayout>
+                <View android:background="@drawable/normal_div" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <RelativeLayout android:id="@id/edit_birthday_birth" android:background="@drawable/form_last_item" android:focusable="true" android:layout_width="fill_parent" android:layout_height="46.0dip">
+                    <TextView android:layout_gravity="center" android:id="@id/label_birthdah_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:text="@string/label_birthday_birth" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/baseFormItemLabel" />
+                    <TextView android:gravity="left" android:layout_gravity="center" android:id="@id/tv_edit_birthday_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/label_birthdah_date" android:layout_centerVertical="true" />
+                    <com.tencent.qqcalendar.view.ButtonSwitch android:id="@id/date_switch_btn" android:layout_width="wrap_content" android:layout_height="32.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" ButtonSwitch:leftBg="@drawable/calendar_switch_left" ButtonSwitch:leftBgSel="@drawable/calendar_switch_left_highlight" ButtonSwitch:rightBg="@drawable/calendar_switch_right" ButtonSwitch:rightBgSel="@drawable/calendar_switch_right_highlight" ButtonSwitch:leftText="@string/label_gregorian" ButtonSwitch:rightText="@string/label_luna" ButtonSwitch:txtColor="\#7F7F7F" ButtonSwitch:txtColorSel="\#FFFFFF"
+                      xmlns:ButtonSwitch="http://schemas.android.com/apk/res/com.tencent.qqcalendar" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="18.0dip">
+                <LinearLayout android:id="@id/birthday_before_remind" android:background="@drawable/form_first_item" android:paddingLeft="13.0dip" android:paddingRight="13.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="46.0dip">
+                    <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/remind" style="@style/baseFormItemLabel" />
+                    <TextView android:gravity="right" android:layout_gravity="center" android:id="@id/tv_edit_event_remind" android:paddingLeft="22.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/event_remind_15min" android:layout_weight="1.0" style="@style/baseFormItemContent" />
+                    <ImageView android:layout_gravity="center" android:layout_width="20.0dip" android:layout_height="13.0dip" android:src="@drawable/more_right" android:contentDescription="@string/desc_set_before_remind" />
+                </LinearLayout>
+                <View android:background="@drawable/normal_div" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:id="@id/edit_birth_event_sound" android:background="@drawable/form_item" android:paddingLeft="13.0dip" android:paddingRight="13.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="46.0dip">
+                    <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ring" style="@style/baseFormItemLabel" />
+                    <TextView android:ellipsize="end" android:gravity="right" android:layout_gravity="center" android:id="@id/tv_edit_event_sound" android:paddingLeft="22.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/alarm_sound_silence" android:singleLine="true" android:layout_weight="1.0" style="@style/baseFormItemContent" />
+                    <ImageView android:layout_gravity="center" android:layout_width="20.0dip" android:layout_height="13.0dip" android:src="@drawable/more_right" android:contentDescription="@string/desc_set_ringtone" />
+                </LinearLayout>
+                <View android:background="@drawable/normal_div" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:id="@id/edit_birthday_remark" android:background="@drawable/form_last_item" android:paddingLeft="13.0dip" android:paddingRight="13.0dip" android:focusable="true" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="46.0dip">
+                    <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_remarks" style="@style/baseFormItemLabel" />
+                    <EditText android:gravity="left" android:layout_gravity="center" android:id="@id/et_birthday_remarks" android:background="@null" android:paddingRight="22.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="22.0dip" android:hint="@string/none" android:singleLine="true" android:layout_weight="1.0" style="@style/baseFormItemLabel" />
+                </LinearLayout>
+            </LinearLayout>
+            <Button android:id="@id/event_delete_btn" android:background="@drawable/red_btn" android:paddingLeft="13.0dip" android:paddingRight="13.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="46.0dip" android:layout_marginTop="18.0dip" android:text="@string/delete_birthday" style="@style/delete_btn_text" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.qqcalendar.view.TopBarWidget android:id="@id/webkit_title_bar" TopBarWidget:title="" style="@style/style_topbar_widget"
+      xmlns:TopBarWidget="http://schemas.android.com/apk/res/com.tencent.qqcalendar" />
+    <WebView android:id="@id/webkit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/webkit_bottom_bar" android:layout_below="@id/webkit_title_bar" />
+    <RelativeLayout android:id="@id/webkit_bottom_bar" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+        <ImageButton android:id="@id/webkit_prev_btn" android:background="@drawable/webkit_prev_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageButton android:id="@id/webkit_next_btn" android:background="@drawable/webkit_next_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/webkit_prev_btn" android:layout_alignParentTop="true" />
+        <ImageButton android:id="@id/webkit_refresh_btn" android:background="@drawable/webkit_refresh_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

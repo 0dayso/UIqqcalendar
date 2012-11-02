@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.qqcalendar.view.TopBarWidget android:id="@id/top_bar_widget_id" TopBarWidget:actionBtnImg="@drawable/btn_confirm" TopBarWidget:title="@string/birthday_import_title_qq" style="@style/style_topbar_widget"
+      xmlns:TopBarWidget="http://schemas.android.com/apk/res/com.tencent.qqcalendar" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/top_bar_widget_id" style="@style/baseForm">
+        <HorizontalScrollView android:id="@id/select_friends_scroll" android:background="#fffffcdf" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+            <LinearLayout android:orientation="horizontal" android:id="@id/select_friends" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="75.0dip" />
+        </HorizontalScrollView>
+        <EditText android:textSize="16.0dip" android:gravity="center_vertical" android:id="@id/search_txt_bar" android:background="@drawable/birthday_import_search_bg" android:paddingLeft="47.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip" android:hint="@string/label_search_friends" android:layout_below="@id/select_friends_scroll" />
+        <com.tencent.common.view.PullToRefreshExpandableListView android:id="@id/friends_listview" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scrollingCache="false" android:groupIndicator="@null" android:childIndicator="@null" android:divider="@null" android:layout_below="@id/search_txt_bar" ptr:ptrMode="pullDownFromTop" ptr:ptrShowIndicator="false" xmlns:ptr="http://schemas.android.com/apk/res-auto" />
+        <ListView android:id="@id/friends_listview_search" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/search_txt_bar" />
+    </RelativeLayout>
+</RelativeLayout>

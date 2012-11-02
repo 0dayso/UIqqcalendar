@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.qqcalendar.view.TopBarWidget TopBarWidget:title="@string/login_title" style="@style/style_topbar_widget"
+      xmlns:TopBarWidget="http://schemas.android.com/apk/res/com.tencent.qqcalendar" />
+    <RelativeLayout android:id="@id/logoutLinearLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/grayBackground">
+        <View android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentTop="true" style="@style/grayBgFirstShadow" />
+        <View android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="1.0dip" android:layout_alignParentTop="true" style="@style/grayBgSecondShadow" />
+        <RelativeLayout android:id="@id/loginRelativeLayout" android:background="@drawable/login_text_bg" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_marginLeft="9.0dip" android:layout_marginTop="40.0dip" android:layout_marginRight="9.0dip">
+            <RelativeLayout android:id="@id/LoginUinLinearLayout" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignTop="@id/loginRelativeLayout" android:layout_centerHorizontal="true">
+                <TextView android:textSize="16.0dip" android:textColor="#ff000000" android:id="@id/LoginUinTextView" android:layout_width="50.0dip" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/login_uin" android:layout_centerVertical="true" />
+                <EditText android:textSize="15.0dip" android:textColor="#ff0d86ff" android:id="@id/loginUinEditText" android:background="@null" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/hint_please_input_qqnum" android:singleLine="true" android:layout_toRightOf="@id/LoginUinTextView" android:layout_centerVertical="true">
+                    <requestFocus />
+                </EditText>
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/loginPwdLinearLayout" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+                <TextView android:textSize="16.0dip" android:textColor="#ff000000" android:id="@id/loginPwdTextView" android:layout_width="50.0dip" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/login_password" android:layout_centerVertical="true" />
+                <EditText android:textSize="15.0dip" android:id="@id/loginPwdEditText" android:background="@null" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/hint_please_input_passwd" android:singleLine="true" android:layout_toRightOf="@id/loginPwdTextView" android:layout_centerVertical="true" android:inputType="textPassword" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <LinearLayout android:id="@id/loginBtnLinearLayout1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_below="@id/loginRelativeLayout" android:layout_centerHorizontal="true">
+            <Button android:id="@id/loginButton" android:background="@drawable/btn_blue" android:layout_width="127.0dip" android:layout_height="wrap_content" android:text="@string/login_login" style="@style/login_btn_text" />
+            <Button android:textColor="#ff888888" android:id="@id/loginCancleButton" android:background="@drawable/btn_default" android:layout_width="127.0dip" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:text="@string/login_no_login" style="@style/login_btn_text" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

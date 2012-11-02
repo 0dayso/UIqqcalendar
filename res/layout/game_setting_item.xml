@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/game_setting_item" android:padding="13.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_gravity="center" android:id="@id/game_id_set_appname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/game_setting_timeInterval_info" style="@style/baseFormItemLabel" />
+    <TextView android:gravity="right" android:layout_gravity="center" android:id="@id/game_id_set_alarmtime" android:paddingLeft="22.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@null" android:layout_weight="1.0" style="@style/baseFormItemContent" />
+    <ImageView android:layout_gravity="center" android:id="@id/id_more_right" android:layout_width="20.0dip" android:layout_height="13.0dip" android:src="@drawable/more_right" />
+</LinearLayout>

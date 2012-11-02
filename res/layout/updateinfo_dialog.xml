@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/parentPanel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="280.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/topPanel" android:background="@drawable/dialog_list_title" android:paddingTop="3.0dip" android:paddingBottom="12.0dip" android:layout_width="@dimen/dialog_width" android:layout_height="wrap_content" android:minHeight="@dimen/dialog_title_minheight">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/title_template" android:paddingLeft="9.0dip" android:paddingTop="@dimen/dialog_title_paddingtop" android:layout_width="@dimen/dialog_width" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="top" android:id="@id/ivAlertIcon" android:paddingRight="10.0dip" android:layout_width="@dimen/dialog_width" android:layout_height="@dimen/dialog_width" android:src="@android:drawable/ic_dialog_info" />
+            <TextView android:textColor="@android:color/white" android:ellipsize="end" android:id="@id/tvAlertTitle" android:paddingLeft="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" style="?android:attr/textAppearanceLarge" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/contentPanel" android:background="@drawable/dialog_background_center" android:paddingLeft="15.0dip" android:paddingRight="10.0dip" android:layout_width="@dimen/dialog_width" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ScrollView android:id="@id/scrollView" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="200.0dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/TitleTextSize" android:textColor="@android:color/black" android:id="@id/tvAppName" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="" />
+                <TextView android:textSize="@dimen/dialog_content_size" android:textColor="@color/current_version_text_color" android:id="@id/tvVersionName" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="" />
+                <TextView android:textSize="@dimen/dialog_content_size" android:textColor="@android:color/black" android:id="@id/tvAlertMessage" android:paddingLeft="5.0dip" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="" />
+            </LinearLayout>
+        </ScrollView>
+        <CheckBox android:textColor="@android:color/black" android:id="@id/cbRemindUpdate" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/update_dialog_never_update" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/buttonPanel" android:background="@drawable/dialog_background_footer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="54.0dip">
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="2.0dip" android:paddingTop="10.0dip" android:paddingRight="2.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/leftSpacer" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.25" />
+            <Button android:textSize="@dimen/dialog_button_size" android:layout_gravity="left" android:id="@id/btnNegativeButton" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:text="下次再说" android:maxLines="2" android:layout_weight="1.0" style="@style/DefaultButton" />
+            <Button android:textSize="@dimen/dialog_button_size" android:layout_gravity="center_horizontal" android:id="@id/btnPositiveButton" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="9.0dip" android:text="立即更新" android:maxLines="2" android:layout_weight="1.0" style="@style/DefaultButton.Blue" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/rightSpacer" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.25" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

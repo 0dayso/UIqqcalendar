@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/parentPanel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minWidth="280.0dip"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@id/topPanel"
+        android:layout_width="@dimen/dialog_width"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_list_title"
+        android:minHeight="@dimen/dialog_title_minheight"
+        android:orientation="vertical"
+        android:paddingBottom="12.0dip"
+        android:paddingTop="3.0dip" >
+
+        <LinearLayout
+            android:id="@id/title_template"
+            android:layout_width="@dimen/dialog_width"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="9.0dip"
+            android:paddingTop="@dimen/dialog_title_paddingtop" >
+
+            <ImageView
+                android:id="@id/ivAlertIcon"
+                android:layout_width="@dimen/dialog_width"
+                android:layout_height="@dimen/dialog_width"
+                android:layout_gravity="top"
+                android:paddingRight="10.0dip"
+                android:src="@android:drawable/ic_dialog_info" />
+
+            <TextView
+                android:id="@id/tvAlertTitle"
+                style="?android:attr/textAppearanceLarge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:paddingLeft="6.0dip"
+                android:singleLine="true"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/contentPanel"
+        android:layout_width="@dimen/dialog_width"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_background_footer"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@id/lvListItem"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dialog_title_paddingtop"
+            android:layout_marginTop="5.0dip"
+            android:paddingLeft="@dimen/dialog_content_padding"
+            android:paddingRight="@dimen/dialog_content_padding"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbars="vertical" />
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/bottombar" />
+    </LinearLayout>
+
+</LinearLayout>

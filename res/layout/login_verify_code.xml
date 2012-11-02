@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/login_view_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.qqcalendar.view.TopBarWidget TopBarWidget:title="@string/login_verify_title" style="@style/style_topbar_widget"
+      xmlns:TopBarWidget="http://schemas.android.com/apk/res/com.tencent.qqcalendar" />
+    <LinearLayout android:orientation="vertical" android:id="@id/verifyCodeLinearLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="100.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/verifyCodeImage" android:layout_width="200.0dip" android:layout_height="50.0dip" android:src="@null" android:contentDescription="verifyCode" />
+        <EditText android:textColor="@android:color/darker_gray" android:id="@id/verifyCodeEditText" android:layout_width="200.0dip" android:layout_height="50.0dip" android:text="@string/login_please_input_verifycode" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/verifyCodeBtnLinearLayout" android:layout_width="220.0dip" android:layout_height="50.0dip" android:layout_marginTop="10.0dip" android:layout_below="@id/verifyCodeLinearLayout" android:layout_centerHorizontal="true">
+        <Button android:id="@id/submitVerifyCodeBtn" android:layout_width="110.0dip" android:layout_height="50.0dip" android:text="@string/commit_verify_code" />
+        <Button android:id="@id/referVerifyCodeBtn" android:layout_width="110.0dip" android:layout_height="50.0dip" android:text="@string/refresh_verify_code" />
+    </LinearLayout>
+</RelativeLayout>

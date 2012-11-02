@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/baseForm"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.qqcalendar.view.TopBarWidget TopBarWidget:actionBtnImg="@drawable/btn_edit" TopBarWidget:title="@string/label_event_detail" style="@style/style_topbar_widget"
+      xmlns:TopBarWidget="http://schemas.android.com/apk/res/com.tencent.qqcalendar" />
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/event_detail_bg_first" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip">
+        <ImageView android:layout_gravity="top" android:id="@id/ivFriendRemindDetailIcon" android:background="@drawable/null_head" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" />
+        <View android:id="@id/leftSpace" android:visibility="gone" android:layout_width="10.0dip" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="@android:color/black" android:id="@id/tvFriendRemindDetailTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="35.0dip" android:drawablePadding="12.0dip" />
+            <TextView android:textColor="@color/text_color" android:ellipsize="end" android:id="@id/tvFriendRemindDetailTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="35.0dip" android:text="8月6日 周三  21:20" android:singleLine="true" />
+            <TextView android:textColor="@color/text_color" android:id="@id/tvFriendRemindDetailFriends" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="35.0dip" android:layout_marginBottom="10.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

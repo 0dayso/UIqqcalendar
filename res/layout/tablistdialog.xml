@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/parentPanel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="280.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/topPanel" android:background="@drawable/dialog_list_title" android:paddingTop="@dimen/dialog_title_paddingtop" android:layout_width="@dimen/dialog_width" android:layout_height="wrap_content" android:minHeight="@dimen/dialog_title_minheight">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/llayTabList" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <ImageView android:gravity="center" android:id="@id/titleDivider" android:layout_width="fill_parent" android:layout_height="3.0dip" android:src="@color/dialog_tablist_divider" android:scaleType="fitXY" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/dialog_background_footer" android:layout_width="@dimen/dialog_width" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/contentPanel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dialog_title_paddingtop">
+            <view android:id="@id/workspace" android:layout_width="fill_parent" android:layout_height="wrap_content" class="com.tencent.common.view.Workspace" />
+        </LinearLayout>
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/bottombar" />
+    </LinearLayout>
+</LinearLayout>

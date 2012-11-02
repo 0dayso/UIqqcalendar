@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.qqcalendar.view.TopBarWidget android:id="@id/top_bar_widget_id" TopBarWidget:actionBtnImg="@drawable/btn_add" TopBarWidget:title="@string/birthday_list_title" style="@style/style_topbar_widget"
+      xmlns:TopBarWidget="http://schemas.android.com/apk/res/com.tencent.qqcalendar" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/top_bar_widget_id" style="@style/baseForm">
+        <ExpandableListView android:id="@id/birthday_list_layout" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scrollingCache="false" android:groupIndicator="@null" android:childIndicator="@null" android:divider="@null" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/unset_bg" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="160.0dip" android:layout_marginBottom="32.0dip" android:layout_centerInParent="true" style="@style/baseForm">
+        <ImageView android:background="@drawable/un_set_birthday_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="26.0dip" android:text="@string/un_set_birthday" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/un_set_title_font" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/un_set_birthday_tips" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/un_set_tips_font" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/sub_xeb_reader_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/view_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.tencent.qqcalendar.view.FlipPage android:id="@id/flippage_widget" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.tencent.qqcalendar.widgt.FadeImageGroup android:id="@id/fade_image_widget" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <com.tencent.qqcalendar.view.ScreenIndicatorWidget android:id="@id/screen_indicator" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <LinearLayout android:id="@id/loginBtnLinearLayout1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="40.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <Button android:textSize="18.0dip" android:id="@id/btn_login" android:visibility="gone" android:layout_width="127.0dip" android:layout_height="50.0dip" android:text="@string/login_login" style="@style/DefaultButton.Blue" />
+        <Button android:textSize="18.0dip" android:id="@id/btn_loginCancle" android:visibility="gone" android:layout_width="127.0dip" android:layout_height="50.0dip" android:layout_marginLeft="18.0dip" android:text="@string/login_no_login" style="@style/DefaultButton" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/child_form_item" android:layout_width="wrap_content" android:layout_height="64.0dip">
+        <ImageView android:id="@id/game_event_list_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:src="@drawable/game_list_app_icon_unknow" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/game_event_list_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignRight="@id/game_event_list_icon" android:layout_alignBottom="@id/game_event_list_icon" />
+        <TextView android:ellipsize="end" android:id="@id/game_event_list_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:singleLine="true" android:layout_toLeftOf="@id/game_event_list_action" android:layout_toRightOf="@id/game_event_list_icon" android:layout_alignTop="@id/game_event_list_icon" />
+        <TextView android:ellipsize="end" android:id="@id/game_event_list_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toLeftOf="@id/game_event_list_action" android:layout_alignLeft="@id/game_event_list_title" android:layout_alignBottom="@id/game_event_list_icon" />
+        <ImageView android:id="@id/game_event_list_action" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/more_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

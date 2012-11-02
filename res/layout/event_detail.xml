@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/baseForm"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.qqcalendar.view.TopBarWidget TopBarWidget:actionBtnImg="@drawable/btn_edit" TopBarWidget:title="@string/label_event_detail" style="@style/style_topbar_widget"
+      xmlns:TopBarWidget="http://schemas.android.com/apk/res/com.tencent.qqcalendar" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip">
+        <RelativeLayout android:background="@drawable/event_detail_bg_first" android:layout_width="fill_parent" android:layout_height="110.0dip">
+            <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="#ff000000" android:ellipsize="end" android:id="@id/event_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="35.0dip" android:layout_marginTop="35.0dip" android:singleLine="true" android:drawableLeft="@drawable/event_detail_icon" android:drawablePadding="12.0dip" />
+            <TextView android:textColor="#ff000000" android:ellipsize="end" android:id="@id/event_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="35.0dip" android:layout_marginTop="5.0dip" android:singleLine="true" android:layout_below="@id/event_title" android:layout_alignLeft="@id/event_title" />
+            <ImageView android:background="@drawable/event_detail_line_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+            <ImageView android:background="@drawable/event_detail_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout android:background="@drawable/event_detail_bg_second" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textColor="#ff262626" android:ellipsize="end" android:id="@id/remind_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="35.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="35.0dip" android:singleLine="true" android:drawableLeft="@drawable/icon_event_remind" android:drawablePadding="12.0dip" />
+            <TextView android:textColor="#ff262626" android:gravity="top" android:id="@id/memo_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="35.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="35.0dip" android:drawableLeft="@drawable/icon_event_content" android:drawablePadding="12.0dip" android:layout_below="@id/remind_info" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

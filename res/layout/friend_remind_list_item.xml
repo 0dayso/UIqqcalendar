@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingBottom="10.0dip" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="top" android:id="@id/ivFriendsRemindListIcon" android:background="@drawable/null_head" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_weight="1.0">
+        <TextView android:textColor="@android:color/black" android:ellipsize="end" android:id="@id/tvFriendsRemindListOperator" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:singleLine="true" style="@android:style/TextAppearance.Medium" />
+        <TextView android:textColor="@android:color/black" android:id="@id/tvFriendsRemindListTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" style="@android:style/TextAppearance.Medium" />
+        <TextView android:textColor="#ff9d9d9d" android:ellipsize="end" android:id="@id/tvFriendsRemindListTime" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:singleLine="true" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/llayFriendsRemindList" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:textColor="#ff679551" android:id="@id/btnFriendsRemindListAccept" android:background="@drawable/btn_remind_accept" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/friend_remind_list_accept" />
+            <Button android:textColor="#ffbf5353" android:id="@id/btnFriendsRemindListReject" android:background="@drawable/btn_remind_reject" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="@string/friend_remind_list_reject" />
+        </LinearLayout>
+        <CheckBox android:enabled="false" android:textColor="#ff9d9d9d" android:id="@id/cbFriendsRemindListHandle" android:paddingLeft="15.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/btn_check_friend_remind_accepted" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.qqcalendar.view.TopBarWidget android:id="@id/title_bar" TopBarWidget:actionBtnImg="@drawable/btn_confirm" TopBarWidget:title="@string/input_comment" style="@style/style_topbar_widget"
+      xmlns:TopBarWidget="http://schemas.android.com/apk/res/com.tencent.qqcalendar" />
+    <EditText android:textSize="20.0dip" android:textColor="#ff0d86ff" android:gravity="top" android:id="@id/addCommentEditText" android:background="@drawable/frame_edittext" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="5.0dip" android:hint="@string/hint_please_input_comment" android:minLines="1000" android:singleLine="false" android:layout_above="@id/textCount" android:layout_below="@id/title_bar" android:inputType="textMultiLine" />
+    <LinearLayout android:id="@id/textCount" android:background="@drawable/comment_write_140_green" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:layout_gravity="left|center" android:id="@id/txtRemainCount" android:paddingLeft="3.0dip" android:layout_width="60.0dip" android:layout_height="wrap_content" android:text="@string/input_comment_max_length" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="update_id" name="tvRemindTitle">false</item>
+    <item type="update_id" name="tvRemindTime">false</item>
+    <item type="update_id" name="ivLogo">false</item>
+    <item type="update_id" name="tvTitle">false</item>
+    <item type="update_id" name="pbDownload">false</item>
+    <item type="update_id" name="tvProcess">false</item>
+</resources>

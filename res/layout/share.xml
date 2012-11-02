@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/baseForm"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.qqcalendar.view.TopBarWidget android:id="@id/title_bar" TopBarWidget:actionBtnImg="@drawable/btn_confirm" TopBarWidget:title="@string/share" style="@style/style_topbar_widget"
+      xmlns:TopBarWidget="http://schemas.android.com/apk/res/com.tencent.qqcalendar" />
+    <LinearLayout android:background="@drawable/form_item_circle_normal" android:padding="13.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="10.0dip">
+        <TextView android:layout_gravity="center" android:id="@id/share_topic_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@null" style="@style/baseFormItemLabel" />
+        <TextView android:layout_gravity="center" android:id="@id/content_colon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@null" style="@style/baseFormItemContent" />
+    </LinearLayout>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:text="@string/share_setting" style="@style/fontGameSetTitle" />
+    <com.tencent.qqcalendar.view.CheckBoxBtnList android:orientation="vertical" android:id="@id/sync2qzone" android:paddingTop="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" CheckBoxBtnList:childCount="1"
+      xmlns:CheckBoxBtnList="http://schemas.android.com/apk/res/com.tencent.qqcalendar" />
+</LinearLayout>

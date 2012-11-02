@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff9f9f9" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.qqcalendar.view.TopBarWidget TopBarWidget:title="@string/about" style="@style/style_topbar_widget"
+      xmlns:TopBarWidget="http://schemas.android.com/apk/res/com.tencent.qqcalendar" />
+    <LinearLayout android:orientation="vertical" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/logo" />
+            <LinearLayout android:orientation="vertical" android:paddingLeft="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/about_title" style="@style/fontContentTitle" />
+                <TextView android:id="@id/about_version" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" style="@style/fontContentTips" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="#ffe9e9e9" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <TextView android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/about_desc" android:layout_weight="15.0" style="@style/fontContent" />
+        <View android:background="#ffe9e9e9" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <TextView android:gravity="center_horizontal" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/about_copyright" style="@style/fontSmallTips" />
+    </LinearLayout>
+</LinearLayout>

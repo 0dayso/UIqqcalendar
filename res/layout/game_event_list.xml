@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.tencent.qqcalendar">
+    <com.tencent.qqcalendar.view.TopBarWidget android:id="@id/game_event_list_title_bar" TopBarWidget:actionBtnImg="@drawable/btn_setting" TopBarWidget:title="@string/game_event_list_appname" style="@style/style_topbar_widget"
+      xmlns:TopBarWidget="http://schemas.android.com/apk/res/com.tencent.qqcalendar" />
+    <ScrollView android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/whiteBackground">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentTop="true" style="@style/whiteBgFirstShadow" />
+            <View android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="1.0dip" android:layout_alignParentTop="true" style="@style/whiteBgSecondShadow" />
+            <RelativeLayout android:id="@id/id_activity_info" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+                <ImageView android:id="@id/id_app_icon" android:layout_width="66.599976dip" android:layout_height="66.599976dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                <TextView android:textSize="18.0dip" android:textColor="#ff000000" android:ellipsize="end" android:id="@id/id_gift_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="" android:singleLine="true" android:layout_toLeftOf="@id/id_tv_no_gift" android:layout_toRightOf="@id/id_app_icon" android:layout_alignTop="@id/id_app_icon" />
+                <TextView android:textSize="14.0dip" android:textColor="#ff000000" android:ellipsize="end" android:id="@id/id_gift_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="" android:maxLines="2" android:layout_below="@id/id_gift_title" android:layout_alignLeft="@id/id_gift_title" />
+                <Button android:textColor="#ffffffff" android:id="@id/id_btn_get_gift" android:background="@drawable/btn_normal_action" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="30.0dip" android:text="@string/label_btn_fetch" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                <TextView android:textSize="15.0dip" android:id="@id/id_tv_no_gift" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_tv_today_fetched" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/id_content_container" android:layout_width="fill_parent" android:layout_height="265.0dip" android:layout_below="@id/id_activity_info">
+                <ExpandableListView android:id="@id/game_event_list" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scrollingCache="false" android:groupIndicator="@null" android:childIndicator="@null" android:divider="@null" android:fadeScrollbars="true" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+                    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                        <TextView android:id="@id/game_event_list_noapp_tips" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/game_event_list_no_event" style="@style/smallGrayText" />
+                        <TextView android:id="@id/game_event_list_nowap_tips" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/game_event_list_noapp_nowap" android:layout_below="@id/game_event_list_noapp_tips" style="@style/smallGrayText" />
+                        <Button android:textSize="18.0dip" android:id="@id/game_event_list_enter_app" android:background="@drawable/game_event_list_enter_app" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/game_event_list_enter_app" android:layout_below="@id/game_event_list_noapp_tips" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/version_control_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_below="@id/id_content_container" android:layout_alignParentBottom="true">
+                <TextView android:textColor="#ff000000" android:id="@id/id_tv_click_msg_enter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/label_tv_click_msg_to" android:layout_alignLeft="@id/version_switch_btn" />
+                <com.tencent.qqcalendar.view.ButtonSwitch android:id="@id/version_switch_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/id_tv_click_msg_enter" android:layout_centerHorizontal="true" ButtonSwitch:leftBg="@drawable/app_switch_left" ButtonSwitch:leftBgSel="@drawable/app_switch_left_highlight" ButtonSwitch:rightBg="@drawable/app_switch_right" ButtonSwitch:rightBgSel="@drawable/app_switch_right_highlight" ButtonSwitch:leftText="@string/label_wap_version" ButtonSwitch:rightText="@string/label_android_version" ButtonSwitch:txtSize="14" ButtonSwitch:txtColor="\#7F7F7F" ButtonSwitch:txtColorSel="\#FFFFFF"
+                  xmlns:ButtonSwitch="http://schemas.android.com/apk/res/com.tencent.qqcalendar" />
+            </RelativeLayout>
+            <ViewStub android:id="@id/vsLeftTips" android:visibility="gone" android:layout="@layout/left_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
